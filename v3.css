@@ -1,0 +1,76 @@
+body {
+    display: grid;                                                      
+    grid-template-columns: repeat(10, 1fr);
+    grid-template-rows: repeat(10, 1fr );
+    height: 100vh;                          
+    background-color: cornflowerblue;             
+    margin: 0;
+    padding: 0;                            
+}
+
+.one {
+    display: grid;
+    grid-column: 1/6;
+    grid-row: 1/6;
+    background-color: red;
+    align-items: center;
+    justify-items: center;
+}
+
+.two {
+    display: grid;
+    grid-column: 6/11;
+    grid-row: 1/6;
+    background-color: blue;
+    align-items: center;
+    justify-items: center;
+}
+
+.three {
+    display: grid;
+    grid-column: 1/6;
+    grid-row: 6/11;
+    background-color: silver;
+    align-items: center;
+    justify-items: center;
+}
+
+.four {
+    display: grid;
+    grid-column: 6/11;
+    grid-row: 6/11;
+    background-color: green;
+    align-items: center;
+    justify-items: center;                             
+}
+
+iframe {
+    justify-self: center;
+    align-self: center;
+}
+
+@media only screen and (max-width: 750px) {
+   
+    .one {
+        grid-column: 1/11;  
+        grid-row: 1/1;
+        padding: 2%;
+    }
+
+    .two {
+        grid-column: 1/11;  
+        grid-row: 2/2;
+        padding: 2%;
+    }
+
+    .three {
+        grid-column: 1/11;  
+        grid-row: 3/3;
+        padding: 2%;
+    }
+    .four {
+        grid-column: 1/11;   
+        grid-row: 4/4;
+        padding: 2%;
+    }
+}   
